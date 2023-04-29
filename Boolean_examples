@@ -1,0 +1,325 @@
+# 1. a butun soni berilgan. Uning musbatligi tekshirilsin.
+# 2
+# -4
+# true
+# false
+# 2. a butun soni berilgan. Uning juftligi tekshirilsin.
+# 4
+# 7
+# true
+# false
+# 3. a butun soni berilgan. Uning toqligi tekshirilsin.
+# 9
+# 12
+# true
+# false
+# 4. a va b butun sonlari berilgan bo‘lsa, ularni (a>2 va b≤3) bo‘lgan hol uchun tekshirilsin.
+# 5 1
+# 1 2
+# true
+# false
+# 5. a va b butun sonlari berilgan bo‘lsa, ularni (a≥0 va b<-2) bo‘lgan hol uchun tekshirilsin.
+# a,b=1, -3
+# x=a>=0 and b<-2
+# print(x)
+# 0 0
+# true
+# false
+# 6. a, b, c butun sonlari berilgan. Ular (a≤b≤c) holat uchun tekshirilsin.
+
+# a,b,c= 1, 4, 3
+# taqqoslash=a<=b<=c
+# print(taqqoslash)
+# 3 2 1
+# true
+# false
+# 7. a, b, c butun sonlar berilgan. b sonining, a va c sonlar orasida yotishi tekshirilsin.
+# a,b,c= 1, 2, 3
+# son=a<b<c
+# print(son)
+# 3 2 1
+# True
+# False
+# 8. a va b butun sonlar berilgan. Ularni har biri toq bo‘lmagan hol uchun tekshirilsin.
+# a,b=2,5
+# son= a%2==0 and b%2==0
+# print(son)
+# 2 4
+# 2 5
+# true
+# false
+# 9. a va b butun sonlar berilgan. Ularning hech bo‘lmaganda bittasi toq ekanligi tekshirilsin.
+# a,b=2, 4
+# son=a%2==1 or b%2==1
+# print(son)
+# 2 4
+# true
+# false
+# 10. a va b butun sonlar berilgan. Bu sonlardan biri toq ekanligi tekshirilsin.
+# a,b= 3 ,4
+# son=(a%2==0 and b%2==1) or (a%2==1 and b%2==0)
+# print(son)
+# 3 5
+# true
+# false
+# 11. a va b butun sonlar berilgan. Ularning bir xil juftlikka ega ekanligi tekshirilsin.
+# a,b=3, 6
+# son=(a%2==0 and b%2==0) or (a%2==1 and b%2==1)
+# print(son)
+# 4 7
+# true
+# false
+# 12. a, b, c butun sonlar berilgan. Ularning har biri musbat ekanligi tekshirilsin.
+# a,b,c= 5, 6, 7
+# son=a>0 and b>0 and c>0
+# print(son)
+# -5 6 7
+# true
+# false
+# 13. a, b, c butun sonlar berilgan. Ularning hech bo‘lmaganda bittasi musbat ekanligi tekshirilsin.
+# a,b,c=-2, -4 ,0
+# son=(a>0 or b>0 or c>0)
+# print(son)
+# -2 -4 0
+# true
+# false
+# 14. a, b, c butun sonlar berilgan. Faqat ulardan bittasi musbatligi tekshirilsin.
+# a,b,c=-4, 9, 11
+# son=a*b*c>0
+# print(son)
+# 4 -9 11
+# true
+# false
+# 15. a, b, c butun sonlar berilgan. Ulardan faqat ikkitasi bir vaqtda musbat ekanligi tekshirilsin.
+# a,b,c=4, -9, -11
+# son=a*b*c<0
+# print(son)
+# -4 9 -11
+# True
+# False
+# 16. Butun musbat son berilgan. Uning juftligi va ikki xonali ekanligi tekshirilsin.
+# a=121
+# son=a%2==0 and 9<a<100
+
+# 101
+# true
+# false
+# 17. Butun musbat son berilgan. Uning toqligi va uch xonali ekanligi tekshirilsin.
+# a=101
+# son=a%2==1 and 99<a<1000
+# 12
+# true
+# false
+# 18. Berilgan uchta sondan juftliklar hosil qilingan. Shu juftliklarning hech bo‘lmaganda
+# bittasidagi sonlar o‘zaro teng bo‘lishi tekshirilsin.
+# a,b,c=2, 3, 1
+# p=a==b or a==c or b==c
+# print(p)
+# 4 6 3
+# true
+# false
+# 19. Berilgan uchta butun sonlar orasidan olingan juftliklardan hech bo’lmaganda
+# bittasidagi sonlar ishoralari bilan farq qilishi tekshirilsin.
+# a,b,c=1, 3, 2
+# a,b,c=a/abs(a),b/abs(b),c/abs(c)
+# p=a*b<0 or a*c<0 or b*c<0
+# print(p)
+# 1 2 3
+# true
+# false
+# 20. Uch xonali son berilgan. Bu son raqamlarining har xil ekanligi tekshirilsin.
+# a,b,c=1, 2, 3
+# p=a!=b and a!=c and b!=c
+# print(p)
+# 1 2 1
+# true
+# false
+# print(son)
+# 21. Uch xonali son berilgan. Uning raqamlari o‘suvchi ketma-ketlik tashkil etishi tekshirilsin.
+# a,b,c=2, 4, 1
+# p=a<b<c
+# print(p)
+# 2 4 3
+# true
+# false
+# 22. Uch xonali son berilgan. Uning raqamlari o‘suvchi yoki kamayuvchi ketma-ketlik tashkil etishi
+# tekshirilsin.
+# a,b,c=5, 6, 5
+# p=a<b<c or a>b>c
+# print(p)
+# 1 2 3
+# 2 3 2
+# true
+# true
+# false
+# 23. To‘rt xonali son berilgan. Uni chapdan o‘ngga va o‘ngdan chapga o‘qiganda bir xil o‘qilishi
+# tekshirilsin.
+# x=1222
+# a=x//1000
+# y=x%1000
+# b=y//100
+# c=(y%100)//10
+# d=(y%1000)%10
+# print(a,b,c,d)
+# p=a==d and b==c
+# print(p)
+# 1201
+# true
+# false
+# 24. a, b, c sonlar berilgan(a≠0). Bu sonlarni kvadrat tenglama koeffisientlari deb hisoblab shu
+# kvadrat tenglamaning haqiqiy yechimga ega ekanligi tekshirilsin.
+import math
+
+# a,b,c=2 ,-5, 6
+# # x1=(-b+math.sqrt(b**2-4*a*c))/2*a
+# # x2=(-b-math.sqrt(b**2-4*a*c))/2*a
+# D=b**2-4*a*c>0
+# print(D)
+# 2 -5 6
+# true
+# false
+# 25. x, y sonlari berilgan. Ularni koordinatalar deb hisoblab 2-chorakda yotishi tekshirilsin.
+# -2 3
+# 2 -3
+# true
+# false
+# 26. x, y sonlari berilgan. Ularni koordinatalar deb hisoblab 4-chorakda yotishi tekshirilsin.
+# 2 -3
+# -2 3
+# true
+# false
+# 27. x, y sonlari berilgan. Ularni koordinatalar deb hisoblab 2- yoki 3-chorakda yotishi tekshirilsin.
+# -4 -6
+# 5 -7
+# true
+# false
+# 28. x, y sonlari berilgan. Ularni koordinatalar deb hisoblab 1- yoki 3-chorakda yotishi tekshirilsin.
+# 5 5
+# -4 3
+# true
+# false
+# 29. Tekislikda nuqta x va y koordinatalari bilan berilgan. Shu nuqta (yuqori chap burchagi (x1,y1),
+# quyi o‘ng burchagi (x3,y3) bo‘lgan, hamda tomonlari koordinata o‘qlariga parallel) to‘g‘ri
+# burchakli to‘rtburchakning ichida yotishi yoki yotmasligi tekshirilsin.
+# x1,y1,x2,y2,x3,y3=3, 1, 0, 2, 2, 0
+# # 3 1 0 2 2 0
+# p=y3<y1<y2 and x2<x1<x3
+# print(p)
+# true
+# false
+# 30. a,b,c butun sonlar berilgan bo‘lib, ular uchburchakning tomonlarini tashkil etadi. Shu
+# uchburchakning teng tomonli ekanligi tekshirilsin.
+# a,b,c=5, 5, 6
+# p=a==b==c
+# print(p)
+# 5 4 5
+# true
+# false
+# 31. a,b,c butun sonlar berilgan bo‘lib, ular uchburchakning tomonlarini tashkil etadi. Shu
+# uchburchakning teng yonli ekanligi tekshirilsin.
+# a,b,c=5, 5, 5
+# p=(a!=b and b!=c and a==c ) or (b==c and b!=a and a!=c)
+# print(p)
+# true
+# 5 5 5 false
+# 32. a,b,c butun sonlar berilgan bo‘lib, ular uchburchakning tomonlarini tashkil etadi. Shu
+# uchburchakning to‘g‘ri burchakli ekanligi tekshirilsin.
+# a,b,c=5, 12, 11
+# p=a**2+b**2==c**2 or a**2+c**2==b**2 or c**2+b**2==a**2
+# print(p)
+# 3 4 2
+# true
+# false
+# 33. Uchta butun son berilgan. Shu sonlarning uchburchakning tomonlarini tashkil etishi
+# tekshirilsin.
+# a,b,c=2, 1, 4
+# p=a+b>c and a+c>b and b+c>a
+# print(p)
+# 2 1 4
+# true
+# false
+# 34. Shaxmat taxtasining quyi chap burchagini koordinata boshi deb hisoblab, (uning kataklarini 1
+# dan 8 gacha butun sonlar bilan belgilangan), shu burchakdagi katakcha qora bo‘lganda, berilgan
+# katak qora bo‘lsa rost, aks holda yolg‘on ekanligi tekshirilsin.
+# a,b=5 ,8
+# p=a%2==1 and b%2==1
+# print(p)
+# 2 3
+# true
+# false
+# 35.▲ Shaxmat taxtasining quyi chap burchagini koordinata boshi deb hisoblab, (uning kataklari
+# 1 dan 8 gacha butun sonlar bilan belgilangan), uning ikkala qismidan bittadan katakcha berilganda,
+# shu katakchalar bir xil rangdaligi tekshirilsin.
+# a,b,c,d=3, 2, 8, 6
+# p=(a+b)%2==(c+d)%2
+# print(p)
+# 3 2 8 6
+# true
+# false
+# 36. Shaxmat taxtasining quyi chap burchagini koordinata boshi deb hisoblab(uning kataklari 1 dan
+# 8 gacha butun sonlar bilan belgilangan), uning ikkita qismidan bittadan katak olingan. Shu
+# kataklardagi piyodalarning bir qadamda boshqa qismga o‘tishligi tekshirilsin.
+# a,b,c,d=1, 4, 2, 5
+# a,b,c,d=1 ,4 ,2 ,7
+# p=3<=b<=d<=6
+# print(p)# true
+# false
+# 37. Shaxmat taxtasining quyi chap burchagini koordinata boshi deb hisoblab, (uning kataklari 1
+# dan 8 gacha butun sonlar bilan belgilangan), har ikkala taxtada mavjud shoxlarning bir yurishda
+# boshqa taxtaga o‘tishi tekshirilsin.
+# a,b,c,d=1, 4, 2, 5
+# a,b,c,d=1, 4, 2, 6
+# p=4<=b<=d<=5
+# print(p)
+# true
+# false
+# 38. Shaxmat taxtasining quyi chap burchagini koordinata boshi deb hisoblab, (uning kataklari 1
+# dan 8 gacha butun sonlar bilan belgilangan), har ikkala taxtada mavjud fillarning bir yurishda(faqat
+# chap tomonga) boshqa taxtaga o‘tishi tekshirilsin.
+# a,b,c,d= 6, 1, 3, 8
+# p=a+b>5 and c+d<13
+# print(p)
+# 6 1 6 8
+# true
+# false
+# 39. Shaxmat taxtasining quyi chap burchagini koordinata boshi deb hisoblab, (uning kataklari 1
+# dan 8 gacha butun sonlar bilan belgilangan), har ikkala taxtada mavjud farzinlarning bir yurishda
+# boshqa taxtaga o‘tishi tekshirilsin.
+a,b,c,d=3, 4, 5, 6
+# a,b,c,d=1,2,5,6
+p=abs(a-c)==abs(b-d)
+# print(p)
+# 1 2 5 6
+# true
+# true
+# 40. Shaxmat taxtasining quyi chap burchagini koordinata boshi deb hisoblab, (uning kataklari 1
+# dan 8 gacha butun sonlar bilan belgilangan), har ikkala taxtada mavjud otlarning bir yurishda
+# boshqa taxtaga o‘tishi tekshirilsin.
+# 3 3 4 5
+# 3 3 5 8 
+
+# true
+# fals
+#
+# a=int(input('a sonini kiriting: '))
+# p=4*a
+# print(p)
+# d=int(input('d sonini kiriting: '))
+# pi=3.14
+# l=pi*d
+# print(l)
+# a=11115
+# print(a>0)
+# a=-5
+# b=7
+# javob=a>2 and b<=3
+# print(javob)
+a=-5
+b=7
+javob=a%2==0 or b%2==0
+# print(javob)
+a=8
+b=6
+c=7
+javob=a<b and b<c
+print(javob)
