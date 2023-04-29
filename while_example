@@ -1,0 +1,369 @@
+# . a va b musbat sonlar berilgan(a>b). a uzunlikdagi kesmaga b uzunlikdagi kesmani mumkin
+# qadar eng ko‘p miqdorda joylashtirilganda, a kesmaning bo‘sh (ortib) qolgan bo‘lagi topilsin.
+# Ko‘paytirish va bo‘lish operatsiyalaridan foydalanilmasin.
+# 5 2 1
+# a=5
+# b=2
+# while a>b:
+#     a-=b
+# print(a)
+# 2. a va b musbat son berilgan(a>b). a uzunlikdagi kesmaga b uzunlikdagi kesma mumkin qadar
+# eng ko‘p miqdorda joylashtirilgan bo`lsa, (Ko‘paytirish va bo‘lish operatsiyalaridan foydalanmay)
+# a kesmaga joylashtirilgan b kesmalar soni aniqlansin.
+# 5 2 2
+# a=5
+# b=2
+# sanoq=0
+# while a>b:
+#     a-=b
+#     sanoq+=1
+# print(sanoq)
+# 3. n va k musbat butun sonlari berilgan. Faqat qo‘shish va ayirish operatsiyasidan foydalanib n ni
+# k ga bo‘lganda bo‘linmaning butun hamda qoldiq qismi topilsin.
+# 5 2 2 1
+# n=21
+# k=2
+# butun=0
+# while n>k:
+#     n-=k
+#     butun+=1
+# print(n,butun)
+# 5. n(n>0) butun son berilgan. U 2 ning biror bir darajasidan iborat bo‘lsa n=2k
+# , shu darajaning
+# ko‘rsatkichi k butun soni topilsin.
+# 128 7
+# n=128
+# k=0
+# while n>2**k:
+#     k+=1
+#     print(k)
+# 6. n(n>0) butun son berilgan. n ikki factorial hisoblansin. Bu yerda n!!=n(n-2)(n-4)… (oxirgi
+# ko‘paytuvchi agar n-juft bo‘lsa 2 ga, toq bo‘lsa 1 ga teng.) Butun tip diapozonidan oshib
+# ketishining oldini olish uchun bu ko‘paytma natija haqiqiy tipli o‘zgaruvchiga qiymatlanadi.
+# 5 15
+# n=5
+# i=1 if n%2==1 else 2
+# p=1
+# while n>=i:
+#     p*=i
+#     print(p)
+# i+=2
+# n=5
+# p=1
+# while n>0:
+#    p*=n
+#
+#    n-=2
+#    print(p)
+# 7. n(n>0) butun son berilgan. Kvadratdan ildiz chiqarish formulasidan foydalanmay kvadrati n
+# dan katta eng kichik k soni topilsin. (k
+# 2>n)
+# 5 3
+# n=10
+# k=0
+# while (k)**2<n:
+#    k+=1
+#    print(k)
+# 8. n butun son berilgan. Kvadratdan ildiz chiqarish formulasidan foydalanmay kvadrati n dan katta
+# bo‘lmagan eng katta butun k soni topilsin. (k
+# 2≤n)
+# 5 2
+# n=10
+# k=1
+# while n>=(k+1)**2:
+#    k+=1
+#    print(k)
+# 9. n(n>1) butun son berilgan. 3
+# k>n tengsizlik o‘rinli bo‘ladigan eng kichik k butun soni topilsin.
+# 10 3
+# n=10
+# k=1
+# while 3**k<=n:
+#    k+=1
+# print(k)
+# 10. n(n>1) butun son berilgan. 3
+# k<n tengsizlik o‘rinli bo‘ladigan eng katta k butun soni topilsin.
+# 10 2
+# n=10
+# k=1
+# while 3**(k+1)<=n:
+#     k+=1
+#     print(k)
+# 11. n(n>1) butun son berilgan. 1+2+…+k yig‘indining n dan katta yoki teng bo‘lishini
+# ta`minlaydigan eng kichik k butun soni va yig‘indining qiymati chiqarilsin. (1+2+…+k≥n)
+# 10 4 10
+# n=10
+# sum=0
+# sanoq=0
+# # x=0
+# while n>sum:
+#     sanoq+=1
+#     sum+=sanoq
+# print(sum,sanoq)
+# 12. n(n>1) butun son berilgan. 1+2+…+k yig‘indining n dan kichik yoki teng bo‘lishini
+# ta’minlaydigan eng katta k butun son va yig‘indining qiymati chiqarilsin. (1+2+…+k≤n)
+# 9 3 6
+# n=9
+# k=0
+# sum=0
+# while sum<=n:
+#   k+=1
+#   sum+=k
+#   print(sum-k,k-1)
+# 13. a(a>1) son berilgan.
+#
+# yig‘indining a dan katta bo‘lishini ta`minlaydigan eng
+# kichik k butun son va yig‘indining qiymati chiqarilsin.
+#
+# 1.5 3 1.8
+# a=1.5
+# sum=0
+# k=0
+# while sum<=a:
+#    k+=1
+#    sum+=1/k
+#    print(sum,k)
+# 14. a(a>1) son berilgan.
+#
+# yig‘indi a dan kichik bo‘ladigan eng katta k butun son va
+# yig‘indi chiqarilsin.
+# 1.6 2 1.5
+# a=1.6
+# sum=0
+# k=0
+# while sum<=a:
+#     k+=1
+#     sum+=1/k
+# print(sum-1/k,k-1)
+# 15. Bankdagi boshlang‘ich qo‘yilma summa 1000 so‘m bo‘lsa va u har oyda p foiz ko‘payib borsa
+# (p-haqiqiy son, 0<p<25) necha oydan so‘ng qo‘yilma 1100 so‘mdan oshishi(o‘tgan oylar soni) k,
+# hamda qo‘yilmaning oxirgi miqdori s(haqiqiy son) chop etilsin.
+# 7.0 2 1145
+# a=1000
+# p=7
+# b=1100
+# sum=0
+# k=0
+# while sum+a<=b:
+#    a+=a*p/100
+#    k+=1
+#    print(a,k)
+# 16. Sportchi mashg‘ulotni boshladi. U 1-kun 10 km masofani bosib o‘tdi. Keyingi har kun bosib
+# o‘tilgan yo‘l uzunligi oldingi kun bosib o‘tilgan yo‘ldan p foiz oshirildi. (p haqiqiy son. 0<p<50)
+# p berilgan bo‘lsa, necha kundan keyin jami bosib o‘tilgan masofa 40 kmdan oshishi aniqlansin va
+# o‘tgan kunlar soni k hamda jami bosib o‘tilgan masofa S hisoblansin.
+# 40.0 3 43.6
+# a=10
+# kun=0
+# b=40
+# p=40
+# sum=0
+#
+#
+# while sum<=b:
+#     sum+=a
+#     print(a)
+#     a+=a*p/100
+#     kun+=1
+# print(kun,sum)
+# 17. n(n>1) butun son berilgan. Bo‘linmaning butunga bo‘lish va qoldiqni aniqlash
+# operatsiyalaridan foydalanib, sonning o‘ng tomonidan boshlab hamma raqamlari chiqarilsin.
+# (birlik xonasidan boshlab)
+# 1562 2 6 5 1
+# n=1562
+# while n>0:
+#     print(n%10)
+#     n//=10
+# 18. n(n>1) butun son berilgan. Butunga bo‘lish va qoldiqni aniqlash operatsiyalaridan
+# foydalanib, uning raqamlari yig‘indisi va raqamlari soni chiqarilsin.
+# 1562 14 4
+# n=1562
+# x=0
+# k=0
+# while n>0:
+#     x+=n%10
+#     n//=10
+#     k+=1
+# print(x,k)
+# 19. n(n>0) butun son berilgan. Butunga bo‘lish va qoldiqni aniqlash operatsiyalaridan
+# foydalanib n sonining teskarisiga(o‘ngdan chapga) o‘qishdan hosil qilingan son chiqarilsin.
+# 1562 2651
+# n=1562
+# b=0
+# while n>0:
+#     b*=10
+#     b+=n%10
+#     n//=10
+# print(b)
+# 20. n butun son berilgan. Butunga bo‘lish va qoldiqini aniqlash operatsiyalaridan foydalanib n
+# sonida “2” raqami borligi aniqlansin. Agar bor bo‘lsa “true” aks holda “false” chiqarilsin.
+# 1562 True
+# n=4363
+# p=False
+# while n>0:
+#     x=n%10
+#     if x==2:
+#         p=True
+#
+#     n//=10
+# print(p)
+# 21. n(n>0) butun son berilgan. Butunga bo‘lish va qoldiqni aniqlash operatsiyalaridan foydalanib
+# n sonida toq raqam borligi aniqlansin. Agar bor bo‘lsa true, aks holda false chiqarilsin.
+# 1668 True
+# n=2668
+# p=False
+# while n>0:
+#     x=n%10
+#     if x%2==1:
+#        p=True
+#
+#     n//=10
+# print(p)
+# 22. n(n>1) butun son berilgan. Agar u tub son bo‘lsa true, aks holda false chiqarilsin.
+# 107 True
+# n=10
+# p=True
+# x=2
+# while x<n:
+#
+#     if n%x==0:
+#         p=False
+#
+#     x += 1
+#
+# print(p,x)
+# 23. a va b butun musbat sonlari berilgan. Evklid algoritmidan foydalanib ularning eng katta
+# umumiy bo‘luvchisi topilsin (EKUB). Agar b≠0 bo‘lsa
+# EKUB(a,b)=EKUB(b,a mod b) aks holda EKUB(a,0)=a.
+# 24 38 2
+# a=24
+# b=38
+# while a!=b:
+#     if a>b:
+#         a=a-b
+#     else:
+#         b=b-a
+#     print(a,b,sep=' ')
+# a=30
+# b=20
+# a1,b1=a,b
+# while a1!=b1:
+#     if a1>b1:
+#         a1+=a
+#     else:
+#         b1+=b
+# print(a1)
+a=3
+b=2
+a1,b1=a,b
+# while a1!=b1:
+#     if a1>b1:
+#         b1+=b
+#     else:
+#         a1+=a
+# print(a1)
+
+# while a1!=b1:
+#     if a1>b1:
+#         b1+=b
+#     else:
+#         a1+=a
+# print(a1)
+# 24. n(n>1) butun son berilgan. fk Fibonachchi sonlar ketma-ketligi quyidagicha aniqlansa, f1=1,
+# f2=1, fk=fk-2+fk-1 k=3, 4…,
+# n sonining Fibonachchi sonlar ketma-ketligida uchrashi tekshirilsin. Agar n soni uchrasa true, aks
+# holda false chiqarilsin.
+# 7 False
+# a1=1
+# a2=1
+# n=8
+# p=True
+# while a2<n:
+#     an=a1+a2
+#     a1,a2=a2,an
+#     print(a2)
+# print(a2==n)
+# 25. n(n>1) butun son berilgan. fk Fibonachchi sonlar ketma-ketligi f1=1, f2=1, fk=fk-2+fk-1 uchun
+# n dan katta 1-Fibonachchi soni topilsin.
+# 7 8
+# n=3
+# f1=1
+# f2=1
+# while n>=f2:
+#     fn=f1+f2
+#     f1,f2=f2,fn
+# print(f2)
+# 26. n(n>1) butun son berilgan. fk Fibonachchi sonlar ketma-ketligi quyidagicha aniqlanadi. f1=1,
+# f2=1, fk=fk-2+fk-1 k=3, 4….
+# n=fk bo‘lsa fk+1 va fk-1(oldingi va keyingi) Fibonachchi sonlari chiqarilsin, aks holda 0 chiqarilsin.
+# 13 8 21
+# n=13
+# f1=1
+# f2=1
+# while n!=f2:
+#     fn=f1+f2
+#     f1,f2=f2,fn
+# if f2==n:
+#     print(f1,f1+f2)
+# else:
+#     print(0)
+# 27. n(n>1) butun son berilgan. fk Fibonachchi sonlar ketma-ketligi quyidagicha aniqlanadi. f1=1,
+# f2=1, fk=fk-2+fk-1 k=3, 4…
+# n=fk bo‘lsa, k (Fibonachchi sonining tartib nomeri) chiqarilsin, aks holda 0 chiqarilsin.
+# 13 6
+# f1=1
+# f2=1
+# n=13
+# a=1
+# while f2!=n:
+#     a+=1
+#     fn=f1+f2
+#     f1,f2=f2,fn
+# if f2<=n:
+#     print(a)
+# else:
+#     print(0)
+# 28. е (е>0) haqiqiy son berilgan. ak haqiqiy sonlar ketma-ketligi quyidagicha aniqlanadi. a1=2
+#
+# │ak-ak-1│<е tengsizlikni qanoatlantiradigan birinchi k soni topilsin hamda k, ak-1 va ak chiqarilsin.
+# 0.7 2 2 2.5
+# a1=2
+# a2=2+1/a1
+# k=2
+# d=abs(a2-a1)
+# e=0.7
+# while d>=e:
+#     an=2+1/a2
+#     a1,a2=a2,an
+#     k+=1
+#     d=abs(a2-a1)
+# print(k,a1,a2)
+# 29.
+# е(е > 0)haqiqiy
+#
+# e=0.4
+# a1=1
+# a2=2
+# k=2
+# d=abs(a2-a1)
+# while d>=e:
+#     an=(a1+2*a2)/3
+#     a1,a2=a2,an
+#     k+=1
+#     d=abs(a2-a1)
+# print(k,a1,a2)
+# 30.▲ a,b,c musbat sonlar berilgan. axb o‘lchamli to‘g‘ri to‘rtburchakka tomoni c bo‘lgan
+# kvadratlar mumkin bo‘lgan eng ko‘p miqdorda joylashtirilsa, ko‘paytirish va bo‘lish
+# operatsiyalaridan foydalanmay to‘g‘ri to‘rtburchakka joylashtirilgan kvadratlar soni aniqlansin.
+# 5 10 2 10
+a=5
+b=10
+c=2
+k=0
+while a>c:
+    a-=c
+    bb=b
+    while bb>=c:
+        bb-=c
+        k+=1
+print(k)
